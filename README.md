@@ -13,14 +13,14 @@ If you don't have Visual Studio Code, you can open it from the Powershell ISE.
 
 ## Usage
 
-1. Make sure to have some text in the file 'input.txt'.
+### 1. Make sure to have some text in the file 'input.txt'.
 
 For example:
 ```
 Hello, this is a test 123.
 ```
 
-2. Run the encryption file first
+### 2. Run the encryption file first
 
 This makes sense since you first want to encrypt the text and at a later time decrypt it.
 
@@ -32,7 +32,7 @@ c:\scripts\Selfmade\Base64\ent.ps1
 ```
 Make sure that the correct file is specified in the path!
 
-3. Run the encryption script
+### 3. Run the encryption script
 
 If you want to decrypt the encrypted text, tun the encryption script.
 
