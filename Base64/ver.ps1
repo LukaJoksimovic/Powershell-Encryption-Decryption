@@ -23,7 +23,7 @@
 . .\Base64\key.ps1
 
 # Store the content from 'input.txt' into $file
-$file = "C:\scripts\selfmade\Base64\input.txt"
+$file = ".\Base64\input.txt"
 
 # Gets the content from the file and saves it into $data
 $data = Get-Content $file
@@ -43,9 +43,7 @@ foreach ($letter in $data1) {
 # We Convert the objects from the array '$arrayToString' into Base64 and store it into a variable
 #(I called the varaible the same way, because it will overwrite the other ones and it doesn't really matter)
 $ArrayToString = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($Arraytostring))
-
 # Save content to variable. / Because the varaible '$arrayToString' is still an array, we want it to become a string rather then to stay an array, this will be achived with the '-join' operator
 $encrypt = $arrayToString -join ''
-
 # The output from '$encrypt' will be piped into a file called 'encrypted.txt'
-$encrypt | Out-File -FilePath C:\scripts\Selfmade\Base64\encrypted.txt
+$encrypt | Out-File -FilePath .\Base64\encrypted.txt

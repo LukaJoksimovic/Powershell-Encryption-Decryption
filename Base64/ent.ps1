@@ -22,7 +22,7 @@
 . .\Base64\key.ps1
 
 # Store the content from 'test.txt' into $file
-$file = "C:\scripts\Selfmade\Base64\encrypted.txt"
+$file = ".\Base64\encrypted.txt"
 
 # Gets the content from the file and saves it into $data
 $data = Get-Content $file
@@ -45,4 +45,4 @@ foreach ($item in $data1){
 $decrypt = $arrayToString -join ''
 
 # The output from '$encrypt' will be piped into a file called 'encrypted.txt'
-$decrypt | Out-File -FilePath C:\scripts\Selfmade\Base64\decrypted.txt
+$decrypt | Out-File -FilePath .\Base64\decrypted.txt
